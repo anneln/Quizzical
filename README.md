@@ -39,7 +39,7 @@ Quizzical is a quiz app where you can:
 
 ## What I Learned
 
--[x] State Management - Use useState to save information and pass data with props -[x] useEffect Hook - Fetch data from internet with fetch() and clean up with AbortController -[x] API Integration - Get questions from external API and handle errors (like 429 errors) -[x] Fisher-Yates Algorithm - Shuffle question answers randomly so the correct answer is not always in the same place -[x] JavaScript - Use map() and forEach() to work with arrays -[x] Conditional Rendering - Show or hide things based on state and give feedback with colors
+- [x] State Management - Use useState to save information and pass data with props -[x] useEffect Hook - Fetch data from internet with fetch() and clean up with AbortController -[x] API Integration - Get questions from external API and handle errors (like 429 errors) -[x] Fisher-Yates Algorithm - Shuffle question answers randomly so the correct answer is not always in the same place -[x] JavaScript - Use map() and forEach() to work with arrays -[x] Conditional Rendering - Show or hide things based on state and give feedback with colors
 
 # React + Vite
 
