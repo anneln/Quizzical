@@ -13,7 +13,7 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-export default function Quizz({ onPlayAgain }) {
+export default function Quizz({ difficulty, onPlayAgain }) {
   const [data, setData] = useState([]);
   const [score, setScore] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
@@ -24,7 +24,7 @@ export default function Quizz({ onPlayAgain }) {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple",
+          `https://opentdb.com/api.php?amount=5&difficulty=${difficulty}&type=multiple`,
           {
             signal: controller.signal,
           },
@@ -47,7 +47,7 @@ export default function Quizz({ onPlayAgain }) {
     };
     fetchData();
     return () => controller.abort();
-  }, []);
+  }, [difficulty]);
 
   function handleChange(e) {
     setUserAnswers((prev) => ({

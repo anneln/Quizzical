@@ -4,8 +4,10 @@ import Quizz from "./Quizz";
 export default function App() {
   const [start, setStart] = useState(false);
   const [quizzKey, setQuizzKey] = useState(0);
+  const [difficulty, setDifficulty] = useState("medium");
 
-  function startQuizz() {
+  function startQuizz(level) {
+    setDifficulty(level);
     setStart(true);
   }
 
@@ -19,11 +21,34 @@ export default function App() {
       <div className="shape blue-sh"></div>
 
       {start ? (
-        <Quizz key={quizzKey} onPlayAgain={resetQuizz} />
+        <Quizz
+          key={quizzKey}
+          difficulty={difficulty}
+          onPlayAgain={resetQuizz}
+        />
       ) : (
         <div className="intro-page">
           <h1>Quizzical</h1>
           <p>Test your knowledge 🎓 !</p>
+          <p>Choose difficulty :</p>
+          <div className="level">
+            <button
+              className="btn-level btn-easy"
+              onClick={() => startQuizz("easy")}
+            >
+              Easy
+            </button>
+            <button className="btn-level" onClick={() => startQuizz("medium")}>
+              Medium
+            </button>
+            <button
+              className="btn-level btn-hard"
+              onClick={() => startQuizz("hard")}
+            >
+              Hard
+            </button>
+          </div>
+
           <button className="start-btn btn" onClick={startQuizz}>
             Start quiz
           </button>
