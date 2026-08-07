@@ -27,7 +27,7 @@ export default function App() {
         <div className="intro-page">
           <h1>Quizzical 🎯</h1>
           <p>Test your knowledge !</p>
-          <p>Choose difficulty for starting quizz</p>
+          <p>Select a difficulty level to begin the quiz</p>
           <div className="level">
             <button
               className="btn-level btn-easy"
@@ -45,6 +45,16 @@ export default function App() {
               Hard
             </button>
           </div>
+          <footer>
+            Made with ❤️ by{" "}
+            <a
+              target="_blank"
+              href="https://portfolio-anne-helene.netlify.app/"
+            >
+              AnneLn
+            </a>{" "}
+            &copy;2026
+          </footer>
         </div>
       )}
     </main>

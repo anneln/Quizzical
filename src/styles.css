@@ -185,3 +185,7 @@ input[type="radio"]:checked + .radio-answer {
 .btn-hard {
   background-color: #f8bcbc;
 }
+
+footer {
+  margin-top: 3rem;
+}
