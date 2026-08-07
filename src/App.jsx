@@ -12,6 +12,7 @@ export default function App() {
   }
 
   function resetQuizz() {
+    setStart(false);
     setQuizzKey((prev) => prev + 1);
   }
 
@@ -28,9 +29,9 @@ export default function App() {
         />
       ) : (
         <div className="intro-page">
-          <h1>Quizzical</h1>
-          <p>Test your knowledge 🎓 !</p>
-          <p>Choose difficulty :</p>
+          <h1>Quizzical 🎯</h1>
+          <p>Test your knowledge !</p>
+          <p>Choose difficulty for starting quizz</p>
           <div className="level">
             <button
               className="btn-level btn-easy"
@@ -48,10 +49,6 @@ export default function App() {
               Hard
             </button>
           </div>
-
-          <button className="start-btn btn" onClick={startQuizz}>
-            Start quiz
-          </button>
         </div>
       )}
     </main>
