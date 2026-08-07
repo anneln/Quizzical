@@ -4,7 +4,7 @@ A quiz app made with React. You can answer quiz questions and get your score.
 
 ## About This Project
 
-This is a **solo project** inspired by [Scrimba's](https://scrimba.com) React course. I designed it in **Figma** before I started coding.
+This is a **solo project** . [Scrimba's](https://scrimba.com) React course provided a **Figma** design and I coded the whole app from scratch using React.
 
 ## What I Built
 
