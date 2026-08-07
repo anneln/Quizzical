@@ -24,7 +24,7 @@ export default function Quizz({ difficulty, onPlayAgain }) {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://opentdb.com/api.php?amount=5&difficulty=${difficulty}&type=multiple`,
+          `https://opentdb.com/api.php?amount=5&difficulty=${difficulty.toLowerCase()}&type=multiple`,
           {
             signal: controller.signal,
           },

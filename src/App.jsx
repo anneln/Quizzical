@@ -3,17 +3,17 @@ import Quizz from "./Quizz";
 
 export default function App() {
   const [start, setStart] = useState(false);
-  const [quizzKey, setQuizzKey] = useState(0);
+
   const [difficulty, setDifficulty] = useState("medium");
 
   function startQuizz(level) {
     setDifficulty(level);
     setStart(true);
+    console.log(level);
   }
 
   function resetQuizz() {
     setStart(false);
-    setQuizzKey((prev) => prev + 1);
   }
 
   return (
@@ -22,11 +22,7 @@ export default function App() {
       <div className="shape blue-sh"></div>
 
       {start ? (
-        <Quizz
-          key={quizzKey}
-          difficulty={difficulty}
-          onPlayAgain={resetQuizz}
-        />
+        <Quizz difficulty={difficulty} onPlayAgain={resetQuizz} />
       ) : (
         <div className="intro-page">
           <h1>Quizzical 🎯</h1>
