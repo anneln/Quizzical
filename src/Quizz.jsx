@@ -3,7 +3,7 @@ import { decode } from "html-entities";
 import { clsx } from "clsx";
 import Confetti from "react-confetti";
 
-/*utilisation de l'algo de Fisher Yate*/
+/*utilisation de l'algo de Fisher Yates*/
 function shuffleArray(array) {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
