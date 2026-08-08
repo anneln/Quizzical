@@ -108,7 +108,7 @@ main {
   color: #f5f7fb;
   font-size: 0.8rem;
   font-weight: 600;
-  margin: 1.2rem;
+  margin: 1.2rem auto;
 }
 
 .quizz-page {
