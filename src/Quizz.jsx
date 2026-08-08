@@ -14,11 +14,7 @@ function shuffleArray(array) {
 }
 
 function shareScoreWhatsApp(score) {
-  let emoji = "😅";
-  if (score >= 4) emoji = "🔥";
-  if (score === 5) emoji = "🏆";
-
-  const message = `${emoji} J'ai obtenu ${score}/5 au Quizzical!\nTu peux faire mieux? 😊\n\nhttps://quizzbyanneln.netlify.app/`;
+  const message = `J'ai obtenu ${score}/5 au Quizzical! Peux-tu faire mieux? \n\nhttps://quizzbyanneln.netlify.app/`;
 
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
