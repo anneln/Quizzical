@@ -17,7 +17,6 @@ body {
   font-size: 16px;
   background-color: #f5f7fb;
   margin: 0;
-
   height: 100vh;
 }
 
@@ -214,8 +213,14 @@ footer {
 
 /*media queries*/
 @media (max-width: 480px) {
-  body {
+  html {
+    height: auto;
     overflow-y: auto;
+  }
+
+  body {
+    height: auto;
+    min-height: 100dvh;
   }
   main {
     width: 100%;
@@ -225,6 +230,7 @@ footer {
   .quizz-page {
     margin: 0 0.5rem 1rem;
     padding-top: 0;
+    padding-bottom: 3.75rem;
   }
 
   .form-quizz {
