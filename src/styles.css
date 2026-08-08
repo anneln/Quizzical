@@ -8,15 +8,17 @@ body {
   font-family: Karla;
   font-size: 16px;
   background-color: #f5f7fb;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   height: 100vh;
   overflow: hidden;
 }
 
 main {
   margin: 0 auto;
-
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   height: 100vh;
 }
@@ -137,7 +139,7 @@ input[type="radio"] {
   color: #293264;
   text-align: center;
   font-family: Inter;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 0.3rem 0.8rem;
   min-width: 0.8rem;
@@ -219,9 +221,7 @@ footer {
     width: 7.5rem;
     margin: 1.5rem auto 2rem;
   }
-  .radio-answer {
-    font-size: 0.9rem;
-  }
+
   .quizz-end {
     flex-direction: column;
     gap: 0.1rem;
