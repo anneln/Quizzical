@@ -30,7 +30,7 @@ main {
 }
 
 .shape {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   pointer-events: none;
 }
