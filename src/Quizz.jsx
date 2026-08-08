@@ -72,7 +72,6 @@ export default function Quizz({ difficulty, onPlayAgain }) {
   }
 
   function playAgain() {
-    window.scrollTo(0, 0); /*pour faire remonter la page*/
     setData([]);
     setScore(0);
     setUserAnswers({});
