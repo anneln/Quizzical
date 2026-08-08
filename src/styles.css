@@ -54,8 +54,8 @@ main {
 .intro-page {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  height: 650px;
+  width: 550px;
   justify-content: center;
   align-items: center;
 }
