@@ -10,14 +10,15 @@ body {
   background-color: #f5f7fb;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 
 main {
   margin: 0 auto;
-  max-width: 700px;
+
   padding: 1rem;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .shape {
@@ -48,6 +49,7 @@ main {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .intro-page h1 {
@@ -202,6 +204,7 @@ footer {
   main {
     width: 100%;
     padding: 1rem 0.5rem;
+    overflow: auto;
   }
 
   .quizz-page {
