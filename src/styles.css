@@ -108,7 +108,7 @@ main {
   color: #f5f7fb;
   font-size: 0.8rem;
   font-weight: 600;
-  margin: 2rem auto;
+  margin: 1.2rem;
 }
 
 .quizz-page {
@@ -176,8 +176,7 @@ input[type="radio"]:checked + .radio-answer {
 .quizz-end {
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  gap: 1rem;
+  align-items: center;
 }
 
 .message-score {

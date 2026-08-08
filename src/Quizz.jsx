@@ -13,6 +13,19 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+function shareScoreWhatsApp(score) {
+  let emoji = "😅";
+  if (score >= 4) emoji = "🔥";
+  if (score === 5) emoji = "🏆";
+
+  const message = `${emoji} J'ai obtenu ${score}/5 au Quizzical!\nTu peux faire mieux? 😊\n\nhttps://quizzbyanneln.netlify.app/`;
+
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+
+  window.open(whatsappUrl, "_blank");
+}
+
 export default function Quizz({ difficulty, onPlayAgain }) {
   const [data, setData] = useState([]);
   const [score, setScore] = useState(0);
@@ -131,6 +144,13 @@ export default function Quizz({ difficulty, onPlayAgain }) {
           {score >= 4 && <Confetti />}
           <button className="btn btn-submit" onClick={() => playAgain()}>
             Play Again
+          </button>
+          <button
+            className="btn btn-submit"
+            style={{ background: "#25D366" }}
+            onClick={() => shareScoreWhatsApp(score)}
+          >
+            📱 Share WhatsApp
           </button>
         </div>
       )}
