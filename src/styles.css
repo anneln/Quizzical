@@ -17,10 +17,12 @@ main {
   margin: 0 auto;
   width: 100%;
   max-width: 900px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   height: 100vh;
+  overflow: hidden;
 }
 
 .shape {
@@ -53,7 +55,6 @@ main {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .intro-page h1 {
@@ -117,6 +118,7 @@ main {
   font-family: Karla;
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 0.6rem;
 }
 
 .form-quizz {
@@ -213,6 +215,7 @@ footer {
 
   .quizz-page {
     margin: 0 1rem 2rem;
+    padding-top: 0;
   }
 
   .form-quizz {
