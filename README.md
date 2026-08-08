@@ -18,7 +18,8 @@ Quizzical is a quiz app where you can:
 
 ## Features
 
-- [x] Quiz questions from the internet
+- [x] Quiz questions from API
+- [x] Level choices
 - [x] Questions and answers are mixed up randomly
 - [x] Your score is counted automatically
 - [x] Green for correct, red for wrong
