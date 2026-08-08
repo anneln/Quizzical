@@ -226,6 +226,10 @@ footer {
     padding: 0.25rem;
   }
 
+  .intro-page {
+    overflow: hidden;
+  }
+
   .quizz-page {
     margin: 0 0.5rem 1rem;
     padding-top: 0;
