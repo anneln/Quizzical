@@ -26,14 +26,12 @@ Quizzical is a quiz app where you can:
 - [x] Green for correct, red for wrong
 - [x] You can play again
 - [x] Error handling if the internet is slow
+- [x] Share your score on WhatsApp
 
 ## Tech Stack
 
-- **React** - The main library
-- **JavaScript** - The programming language
-- **HTML & CSS** - For the page design
-- **Figma** - I designed it here first
-- **Open Trivia Database API** - Where the questions come from
+- **React**
+- **Open Trivia Database API** - To get questions
 - **Libraries used**:
   - `html-entities` - To show special characters
   - `clsx` - To add classes easily
